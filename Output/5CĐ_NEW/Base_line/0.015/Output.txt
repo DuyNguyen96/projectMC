@@ -1,0 +1,5 @@
+nhạc, đĩa, album, hát, 
+nhạc, album, chương_trình, ca_sĩ, ca_khúc, 
+bệnh, thuốc, trẻ, điều_trị, nghiên_cứu, 
+đầu_tư, cổ_phiếu, thị_trường, đồng, công_ty, giao_dịch, giá, chứng_khoán, cổ_phần, doanh_nghiệp, tổ_chức, mua, phiên, tỷ, hoạt_động, 
+vợt, giải, trận, thi_đấu, , chiến_thắng, giành, vô_địch, 

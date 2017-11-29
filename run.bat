@@ -1,0 +1,1 @@
+java -jar MC-1.jar %*
