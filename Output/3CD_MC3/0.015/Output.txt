@@ -1,0 +1,7 @@
+nêm, hành, rượu, tiêu, cải, xào, thịt, chín, hạt, lá, g, bò, gừng, thái, trắng, 
+món, sôi, g, nồi, nguyên_liệu, sạch, 
+món, đi, bún_bò, sợi, bún, tô, rau, miếng, thịt, mùi, 
+chứng_khoán, thị_trường, đầu_tư, công_ty, giao_dịch, tổ_chức, tp, hcm, đồng, trung_tâm, ngân_hàng, 
+đồng, cổ_phiếu, giao_dịch, phiên, chứng_chỉ, giá, thị_trường, đội, hôm_qua, vnindex, khối_lượng, đóng_cửa, bbt, 
+đội, đầu_tư, công_ty, cổ_phiếu, cổ_phần, đồng, trận, bóng, trận_đấu, thị_trường, giá, doanh_nghiệp, chứng_khoán, phút, 
+đường, phút, tỏi, món, bột, dầu, cắt, nước_mắm, cá, nóng, thịt, dừa, ướp, hành, tiêu, ớt, lá, g, 

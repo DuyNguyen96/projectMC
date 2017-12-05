@@ -1,0 +1,3 @@
+công_ty, ngân_hàng, chứng_khoán, thông_tin, doanh_nghiệp, cổ_phần_hoá, giao_dịch, đầu_tư, vốn, thị_trường, tdtt, cổ_phần, hoạt_động, trái_phiếu, niêm_yết, ủy, 
+cổ_phiếu, giao_dịch, đồng, giá, đầu_tư, cổ_phần, phiên, công_ty, chứng_chỉ, 
+đội, món, phút, đường, trận, g, bóng, hành, dầu, trận_đấu, lá, ớt, thịt, tỏi, cá, bột, dừa, giải, thi_đấu, rau, muối, cắt, vòng, 

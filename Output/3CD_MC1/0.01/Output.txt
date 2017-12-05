@@ -1,0 +1,3 @@
+đồng, cổ_phiếu, đầu_tư, giao_dịch, thị_trường, chứng_chỉ, vnindex, giá, phiên, đóng_cửa, khối_lượng, hôm_qua, trái_phiếu, tỷ, gmd, gil, mua, hai, , ree, nước_ngoài, vf, kha, 
+công_ty, đầu_tư, chứng_khoán, thị_trường, cổ_phiếu, cổ_phần, giao_dịch, đồng, niêm_yết, nhà_nước, giá, doanh_nghiệp, tổ_chức, mua, tỷ, 
+đội, phút, trận, món, trận_đấu, bóng, sân, thịt, nguyên_liệu, đường, vòng, tỏi, tiêu, bột, rau, tỷ_số, thắng, ớt, nóng, miếng, hai, cầu_thủ, giải, hành, muối, cá, dầu, lá, 

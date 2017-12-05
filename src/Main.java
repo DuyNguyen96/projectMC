@@ -1,10 +1,11 @@
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 
 	@SuppressWarnings("resource")
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("-------- Maximum Capturing -------\n");
@@ -26,7 +27,7 @@ public class Main {
 			lstArrItem = pDC.listArrItem_TF_IDF(lstDC, minsupp, ner);
 		}
 		System.out.println("Creating similarity matrix ...\n");
-		double[][] sim = pDC.createSimilarityMC_3(lstArrItem);
+		double[][] sim = pDC.createSimilarity(lstArrItem);
 		MC mc1 = new MC(sim, lstArrItem.size());
 		System.out.println("Clustering text ...\n");
 		mc1.cluster();

@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.ArrayList;
 
 
@@ -87,7 +88,7 @@ public class MC {
 		return list;
 	}
 	
-	public void writeOutPut(ArrayList<Document> listDC, double minsupp){
+	public void writeOutPut(ArrayList<Document> listDC, double minsupp) throws IOException{
 		Writer wr = new Writer();
 		int sttCluster = 0;
 		for(Cluster c : listCluster){
@@ -329,7 +330,7 @@ public class MC {
 	public void normalize(int numOfCluster){
 		ArrayList<Integer> listChecked = new ArrayList<>();
 		ArrayList<Cluster> listClusterWithMinimumLearningRate = new ArrayList<>();
-		int minimumLearningRate = findMinimumLearningRate();
+		double minimumLearningRate = findMinimumLearningRate();
 		listClusterWithMinimumLearningRate = listClusterWithMinimumLearningRate(minimumLearningRate);
 		simCluster(listCluster);
 		
@@ -368,7 +369,7 @@ public class MC {
 	public void normalize_Random(int numOfCluster){
 		ArrayList<Integer> listChecked = new ArrayList<>();
 		ArrayList<Cluster> listClusterWithMinimumLearningRate = new ArrayList<>();
-		int minimumLearningRate = findMinimumLearningRate();
+		double minimumLearningRate = findMinimumLearningRate();
 		listClusterWithMinimumLearningRate = listClusterWithMinimumLearningRate(minimumLearningRate);
 		simCluster(listCluster);
 		
@@ -406,7 +407,7 @@ public class MC {
 		ArrayList<Integer> listChecked = new ArrayList<>();
 		ArrayList<Cluster> listC_Other = new ArrayList<>();
 		ArrayList<Cluster> listClusterWithMinimumLearningRate = new ArrayList<>();
-		int minimumLearningRate = findMinimumLearningRate();
+		double minimumLearningRate = findMinimumLearningRate();
 		listClusterWithMinimumLearningRate = listClusterWithMinimumLearningRate(minimumLearningRate);
 		simCluster(listCluster);
 		
@@ -436,19 +437,20 @@ public class MC {
 			} else{
 					break;
 				}
-			}
+			
 			if (flag){
 				minimumLearningRate = findMinimumLearningRate();
 				listClusterWithMinimumLearningRate = listClusterWithMinimumLearningRate(minimumLearningRate);
 				simCluster(listCluster);
 				listChecked.clear();
 			}
+		}
 	}
 	
 	public void normalize2(int numOfCluster){
 		ArrayList<Integer> listChecked = new ArrayList<>();
 		ArrayList<Cluster> listClusterWithMinimumLearningRate = new ArrayList<>();
-		int minimumLearningRate = findMinimumLearningRate();
+		double minimumLearningRate = findMinimumLearningRate();
 		listClusterWithMinimumLearningRate = listClusterWithMinimumLearningRate(minimumLearningRate);
 		simCluster(listClusterWithMinimumLearningRate);
 		
@@ -522,8 +524,8 @@ public class MC {
 		return cl;
 	}
 	
-	private int findMinimumLearningRate(){
-		int min = Integer.MAX_VALUE;
+	private double findMinimumLearningRate(){
+		double min = Integer.MAX_VALUE;
 		for (Cluster c : listCluster){
 			if(c.getLearningRate() < min){
 				min = c.getLearningRate();
@@ -582,7 +584,7 @@ public class MC {
 	}
 	
 	
-	private ArrayList<Cluster> listClusterWithMinimumLearningRate(int minimumLearningRate){
+	private ArrayList<Cluster> listClusterWithMinimumLearningRate(double minimumLearningRate){
 		ArrayList<Cluster> listClusterWithMinimumLearningRate = new ArrayList<>();
 		for (Cluster c : listCluster){
 			if(c.getLearningRate() == minimumLearningRate){

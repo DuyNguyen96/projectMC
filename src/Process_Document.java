@@ -68,8 +68,8 @@ public class Process_Document {
 		return strSW.equals(str.substring(0, lastIndexCharacter));
 	}
 	
-	public int[][] createSimilarity(ArrayList<ArrayList<Item>> lstItem){
-		int[][] sim = new int[lstItem.size()][lstItem.size()];
+	public double[][] createSimilarity(ArrayList<ArrayList<Item>> lstItem){
+		double[][] sim = new double[lstItem.size()][lstItem.size()];
 		for(int i = 0; i < lstItem.size() - 1; i++){
 			for (int j = i + 1; j < lstItem.size(); j++){
 				sim[i][j] = simItem(lstItem.get(i), lstItem.get(j));

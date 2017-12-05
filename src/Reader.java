@@ -27,7 +27,7 @@ public class Reader {
 					line = line.toLowerCase().replaceAll("-", "").replaceAll("\\s\\s", " ");	
 					dc.addData(line);	
 				}
-				dc.setDocumentID(lstDocument.size() + "-- " + f.getName());
+				dc.setDocumentID(f.getName());
 				lstDocument.add(dc);
 				dc = new Document("");
 			}

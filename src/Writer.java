@@ -32,6 +32,11 @@ public class Writer {
 	public void writeListCluster(ArrayList<Document> lstDocumet, String filePath){
 		try {
 			Files.createDirectories(Paths.get(filePath));
+			for(Document dc : lstDocumet){
+				File input = new File("./Input/" + dc.getDocumentID());
+				File ouput = new File(filePath + '/' + dc.getDocumentID());
+				Files.copy(input.toPath(), ouput.toPath());
+			}
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -39,7 +44,7 @@ public class Writer {
 		
 		
 		for(Document dc : lstDocumet){
-			try {
+			/*try {
 				FileOutputStream file = new FileOutputStream(filePath + "/" + dc.getDocumentID());
 				OutputStreamWriter osr = new OutputStreamWriter(file, "utf-8");
 				BufferedWriter writer = new BufferedWriter(osr);
@@ -48,7 +53,8 @@ public class Writer {
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
+			}*/
+			
 		}
 	}
 	
